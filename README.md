@@ -1,14 +1,14 @@
 import discord
 import random
 
-# Variabel intents menyimpan hak istimewa bot
+
 intents = discord.Intents.default()
-# Mengaktifkan hak istimewa message-reading
+
 intents.message_content = True
-# Membuat bot di variabel klien dan mentransfernya hak istimewa
+
 client = discord.Client(intents=intents)
 
-# List of trivia questions and answers
+
 trivia_questions = [
     {
         "question": "What is the capital of France?",
@@ -60,4 +60,4 @@ async def on_message(message):
     else:
         await message.channel.send(message.content)
 
-client.run("YOUR_BOT_TOKEN")
+client.run("bot token di sini")
